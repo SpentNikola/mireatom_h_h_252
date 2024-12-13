@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.left-aligned {
+    float: left;
+    width: 80%;
+    margin-right: 30%;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.mathlive-container {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #eaeaea;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+/* Стилизация кнопки "Добавить в БД" */
+.right-panel button {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #4CAF50; /* Зеленый цвет кнопки */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right-panel button:hover {
+    background-color: #45a049; /* Немного темнее при наведении */
+}
+
+.buttons button:hover {
+    background-color: #ddd;
+}
+
+.right-panel {
+    float: right;
+    width: 40%;
+    margin-right: 2%;
+}
+
+.output {
+    margin-top: 20px;
+}
+
+.output h3 {
+    font-family: 'Georgia', Times, serif;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#rendered-output {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    word-break: break-all;
+}
+
+#latex-output {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    word-break: break-all;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    font-family: monospace;
+    font-size: 0.8em;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
