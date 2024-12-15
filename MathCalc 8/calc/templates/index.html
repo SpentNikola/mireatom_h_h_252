@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive LaTeX Calculator</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <script defer src="../static/interactive_latex_calculator.js"></script>
+    <script src="../static/mathlive.js"></script>
+    <script src="../static/math.min.js"></script>
+    <script src="../static/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="left-panel">
+        <h2>Интерактивный калькулятор LaTeX</h2>
+        <div class="calculator left-aligned">
+            <div class="mathlive-container">
+                <!-- MathLive input for interactive LaTeX -->
+                <math-field id="math-input" virtual-keyboard-mode="manual" style="width: 100%; font-size: 1.5em;"
+                            aria-label="Введите свою формулу LaTeX здесь"></math-field>
+            </div>
+
+            <div class="buttons">
+            <button onclick="clearInput()">Очистить</button>
+            <button onclick="renderOutput()">Вывести</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-panel">
+        <h3>Сформированная Формула</h3>
+        <div id="rendered-output"></div>
+
+        <h3>Синтаксис LaTeX</h3>
+        <div id="latex-output"></div>
+
+        <h3>Описание формулы</h3>
+        <textarea id="formulaDescription"></textarea>
+
+        <button onclick="addFormulaToDatabase()">Добавить формулу в Базу Данных</button>
+    </div>
+</body>
+</html>
